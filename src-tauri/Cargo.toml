@@ -1,0 +1,21 @@
+[package]
+name = "svg-svg-no-mi"
+version = "0.1.0"
+description = "A studio-grade desktop SVG vector graphics editor with planar-graph Shape Builder"
+authors = ["SVG-SVG-no-Mi"]
+edition = "2021"
+
+[lib]
+name = "svg_svg_no_mi_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+tauri-plugin-fs = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+

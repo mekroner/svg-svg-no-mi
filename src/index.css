@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .tb-btn {
+    @apply flex items-center gap-1.5 px-2 py-1 rounded-md bg-[#191d28] hover:bg-[#242a3b] border border-[#262b3d] text-slate-300 hover:text-white transition text-[11px] font-medium;
+  }
+
+  .tb-icon-btn {
+    @apply p-1.5 rounded-md bg-[#191d28] hover:bg-[#242a3b] border border-[#262b3d] text-slate-300 hover:text-white transition flex items-center justify-center;
+  }
+
+  .prop-input {
+    @apply flex items-center justify-between bg-[#181c26] px-2 py-1 rounded border border-[#252a3a] text-slate-400;
+  }
+
+  .prop-input input {
+    @apply w-14 bg-transparent text-right text-slate-200 focus:outline-none font-mono;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #10131c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #272d40;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b4461;
+}
+
